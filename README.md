@@ -80,20 +80,28 @@ python src/main.py --input data/sample.dxf --outdir out
 
 ## Docker
 
-Образ собирается на Debian и включает ODA File Converter для Linux: DWG из
-набора «Пилотный проект 20 улиц» читается прямо в контейнере.
+Запуск прототипа. Нужен только Docker. Образ собирается на Debian и
+включает ODA File Converter для Linux, поэтому DWG из набора
+«Пилотный проект 20 улиц» читается прямо в контейнере.
 
 ```bash
+git clone https://github.com/Kaban425/greenai && cd greenai
 docker compose build                      # или: docker build -t greenai:latest .
 docker compose up                         # сайт http://localhost:8000, Swagger /docs
 ```
 
-Расчёт из командной строки (результат — в `./output/run1`):
+Расчёт из командной строки на учебном чертеже (результат — в `./output/run1`):
 
 ```bash
 docker compose run --rm greenai python src/main.py \
-    --input data/sample.dxf --outdir output/run1
+    --input data/sample.dxf --outdir output/run1 --plan-only
+docker compose run --rm greenai python src/verify_output.py \
+    data/sample.dxf output/run1           # проверка: исходные слои целы, у посадок есть нормы
 ```
+
+Готовый пример входного и выходного DXF с объяснениями лежит в
+[examples/](examples/): `sample_input/sample.dxf` →
+`sample_output/sample_GREEN_AI.dxf`, `_explain.json`, `_explain.csv`, `_report.md`.
 
 Свой чертёж кладётся в `./input`. Если это комплект с внешними ссылками
 (генплан eTransmit и папки ссылок рядом), папку монтируют целиком:
