@@ -1,0 +1,37 @@
+// Схема процесса GreenAI: от входного чертежа до выходного DXF.
+// Рендер: dot -Tpng -Gdpi=150 docs/process.dot -o docs/img/process.png
+digraph greenai {
+  graph [rankdir=TB, fontname="Montserrat", nodesep=0.35, ranksep=0.32, bgcolor="white", pad=0.2];
+  node  [shape=box, style="rounded,filled", fontname="Montserrat", fontsize=11,
+         fillcolor="#F4ECFA", color="#8A83D1", fontcolor="#1C1D22", margin="0.18,0.08"];
+  edge  [color="#520978", arrowsize=0.7, fontname="Montserrat"];
+
+  in    [label="Вход: DXF / DWG / векторный PDF\n+ файлы сетей (--with), папка ссылок (--xref-dir)", fillcolor="#310F53", fontcolor="white", color="#310F53"];
+  conv  [label="DWG → DXF (ODA File Converter)\nPDF → векторы по слоям"];
+  read  [label="Чтение геометрии: блоки, цвета объектов,\nштриховки (карта поверхностей)"];
+  xref  [label="Внешние ссылки: поиск файлов, перенос по точке\nвставки, проверка совпадения с планом"];
+  cls   [label="Классы слоёв:\n1 правила  2 контекст (типы покрытий, соседство, подписи)\n3 модель имён  4 локальная LLM (по желанию)"];
+  safe  [label="Газон, граница работ, «не учитывать» —\nтолько правила или человек", shape=diamond, fillcolor="#FFD6E4", color="#FF0053"];
+  dist  [label="Карты расстояний до каждого класса (шаг 0,25 м)"];
+  norms [label="Нормы отступов: СП 42.13330.2016 табл. 9.1 =\n743-ПП прил. 1 п. 3.6.3 табл. 3.6.1 = 623-ПП п. 4.2.4\n(config/norms.yaml, сценарий strict / practice)", fillcolor="#FFD6E4", color="#FF0053"];
+  zone  [label="Зона допустимости: поверхность посадки − покрытия\n− отступы (отдельно деревья и кустарники)"];
+  place [label="Деревья: продолжение рядов → аллея вдоль борта →\nгруппы и досадка, шаг 6 м (743-ПП табл. 3.6.2);\nранжирование мест — веса или обученная модель"];
+  shrub [label="Кустарники: изгороди и массивы; породы по\nассортименту ДПиООС и правилу 10-20-30"];
+  c1    [label="Проверка 1: отступы по картам", shape=diamond, fillcolor="#FFD6E4", color="#FF0053"];
+  c2    [label="Проверка 2: внутри зоны", shape=diamond, fillcolor="#FFD6E4", color="#FF0053"];
+  c3    [label="Проверка 3: точные расстояния\nдо исходной геометрии", shape=diamond, fillcolor="#FFD6E4", color="#FF0053"];
+  drop  [label="Посадка убирается\nиз результата", fillcolor="#FF0053", fontcolor="white", color="#FF0053"];
+  expl  [label="Объяснение каждой посадки: объект, норма,\nфакт, акт и пункт"];
+  out1  [label="DXF: исходные слои без изменений\n+ GREEN_AI_TREES / SHRUBS / ZONES / NOTES", fillcolor="#310F53", fontcolor="white", color="#310F53"];
+  out2  [label="*_explain.json / .csv, *_report.md,\n*_PLAN_ONLY.dxf, интерактивная схема", fillcolor="#310F53", fontcolor="white", color="#310F53"];
+  cad   [label="Проверка в CAD (nanoCAD под МосТех.ОС)\nи src/verify_output.py"];
+
+  in -> conv -> read -> xref -> cls -> safe -> dist -> zone;
+  norms -> zone;
+  zone -> place -> shrub -> c1 -> c2;
+  c2 -> c3 [label=" да", fontsize=10];
+  c2 -> drop [label=" нет", fontsize=10];
+  c3 -> drop [label=" ближе нормы", fontsize=10];
+  c3 -> expl [label=" соблюдено", fontsize=10];
+  expl -> out1; expl -> out2; out1 -> cad;
+}

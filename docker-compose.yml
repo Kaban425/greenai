@@ -1,0 +1,20 @@
+services:
+  greenai:
+    build: .
+    image: greenai:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./input:/app/input
+      - ./output:/app/output
+      # сконвертированные DWG и разбор чертежей: повторный расчёт в разы быстрее
+      - greenai-cache:/app/cache
+    environment:
+      GREENAI_HOST: 0.0.0.0
+      GREENAI_OPEN: "0"
+    # Веб-интерфейс:  docker compose up        → http://localhost:8000, Swagger /docs
+    # Только расчёт:  docker compose run --rm greenai \
+    #                   python src/main.py --input data/sample.dxf --outdir output/run1
+
+volumes:
+  greenai-cache:

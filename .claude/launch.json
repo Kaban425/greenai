@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "greenai-web",
+      "runtimeExecutable": ".venv/Scripts/python.exe",
+      "runtimeArgs": ["src/webapp.py"],
+      "port": 8765,
+      "env": {"GREENAI_PORT": "8765", "GREENAI_OPEN": "0", "PYTHONIOENCODING": "utf-8"}
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+.venv/
+__pycache__/
+out/
+*.pyc
+config/local.yaml
+input/*
+!input/README.txt
+output/*
+!output/README.txt
+.venv-train/
+config/layer_embeddings.npz
+tools/
+models/
+unsloth_compiled_cache/
+logs/
+cache/
+
+# чертежи организаторов и промежуточные файлы — не в репозиторий
+data/*
+!data/sample.dxf
+config/*.bak
+config/last_run.json
+config/llm_layers_cache.json
+config/harvest_done.json
+*.bak
+.idea/
+.claude/settings.local.json
+docs/deck/qa/
+docs/deck/lq/
+docs/deck/q2/
+# презентация с личными данными команды (фото, телефон) — не в репозиторий
+docs/deck/GreenAI_*.pptx
+docs/deck/GreenAI_*.pdf
+docs/deck/q3/
+docs/deck/q4/
+# производное от данных пилота (чертежи ДПиООС): только локально
+layers.txt
+config/batch_report*.json
+config/verify_report.json
+config/harvest_unknown.txt
+config/lora_split.json
+config/llm_eval.json
+config/Modelfile.lora
+docs/deck/img/kam*.png
+
+# комплект для сдачи (данные пилота, личные данные)
+submission/

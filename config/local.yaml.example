@@ -1,0 +1,8 @@
+# Локальные настройки машины. Скопируйте в config/local.yaml и поправьте путь.
+# В репозиторий local.yaml не попадает: у каждого своя установка.
+
+# Путь к ODA File Converter — нужен только для чтения DWG напрямую.
+# Windows:
+odafc_path: "C:/Program Files/ODA/ODAFileConverter 26.2/ODAFileConverter.exe"
+# Linux / МосТех.ОС:
+# odafc_path: "/usr/bin/ODAFileConverter"

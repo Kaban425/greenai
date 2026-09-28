@@ -1,0 +1,4683 @@
+categories:
+  yard: Дворовые территории
+  preschool: Дошкольные учреждения
+  school: Школы, колледжи, спортивные учреждения
+  health: Учреждения здравоохранения и реабилитации
+  highway: Магистрали, шоссе, проспекты
+  square: Площади и общественно-деловые пространства
+  park: Парки, бульвары, скверы, набережные
+  industrial: Производственные и санитарно-защитные зоны
+items:
+- name: Ель колючая (формы и сорта)
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Ель обыкновенная/европейская (формы и сорта)
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - 'Требует особого ухода: защита корневой системы от травм, весеннее дождевание кроны (при посадке у
+    дорог), мульчирование, рыхление'
+  - Требует дренированных, рыхлых, незасоленных, неуплотнённых почв. Не высаживать в зонах с застойным
+    увлажнением и на уплотнённых грунтах
+  - Чувствительно к противогололёдным реагентам и выхлопным газам
+  source: основной
+- name: Лиственница американская
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Лиственница даурская (Гмелина)
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Лиственница европейская (опадающая) (формы и сорта)
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Лиственница сибирская
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Сосна обыкновенная (формы и сорта)
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - 'Требует особого ухода: защита корневой системы от травм, весеннее дождевание кроны (при посадке у
+    дорог), мульчирование, рыхление'
+  - Требует дренированных, рыхлых, незасоленных, неуплотнённых почв. Не высаживать в зонах с застойным
+    увлажнением и на уплотнённых грунтах
+  - Чувствительно к противогололёдным реагентам и выхлопным газам
+  source: основной
+- name: Можжевельник виргинский (формы и сорта)
+  kind: shrub
+  group: хвойный
+  allowed:
+    yard: true
+    preschool: true
+    school: false
+    health: false
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  - Чувствительно к противогололёдным реагентам и выхлопным газам
+  - Не высаживать вблизи плодовых культур (яблоня, груша, айва) из-за риска распространения ржавчинных
+    грибов
+  source: основной
+- name: Можжевельник горизонтальный (формы и сорта)
+  kind: shrub
+  group: хвойный
+  allowed:
+    yard: true
+    preschool: true
+    school: false
+    health: false
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  - Чувствительно к противогололёдным реагентам и выхлопным газам
+  - Не высаживать вблизи плодовых культур (яблоня, груша, айва) из-за риска распространения ржавчинных
+    грибов
+  source: основной
+- name: Можжевельник казацкий (формы и сорта)
+  kind: shrub
+  group: хвойный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: false
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  - Чувствительно к противогололёдным реагентам и выхлопным газам
+  - Не высаживать вблизи плодовых культур (яблоня, груша, айва) из-за риска распространения ржавчинных
+    грибов
+  source: основной
+- name: Можжевельник средний Пфитцериана (формы и сорта)
+  kind: shrub
+  group: хвойный
+  allowed:
+    yard: true
+    preschool: true
+    school: false
+    health: false
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  - Чувствительно к противогололёдным реагентам и выхлопным газам
+  - Не высаживать вблизи плодовых культур (яблоня, груша, айва) из-за риска распространения ржавчинных
+    грибов
+  source: основной
+- name: Можжевельник скальный (формы и сорта)
+  kind: shrub
+  group: хвойный
+  allowed:
+    yard: true
+    preschool: true
+    school: false
+    health: false
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  - Чувствительно к противогололёдным реагентам и выхлопным газам
+  - Не высаживать вблизи плодовых культур (яблоня, груша, айва) из-за риска распространения ржавчинных
+    грибов
+  source: основной
+- name: Сосна горная(формы и сорта)
+  kind: shrub
+  group: хвойный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Чувствительно к противогололёдным реагентам и выхлопным газам
+  source: основной
+- name: Бархат Амурский
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Береза повислая/плакучая (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: false
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Береза пушистая (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: false
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Боярышник Арнольда
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Боярышник крупноколючковый
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Боярышник перистонадрезанный
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Боярышник полумягкий/мягковатый
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Боярышник сливолистный
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Боярышник точечный
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Боярышник чёрный
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Вишня обыкновенная
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Вяз гибридный Резиста
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Вяз перисто-ветвистый
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Вяз приземистый
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Груша уссурийская
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Дуб красный
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Разрешён на всех территориях, кроме ООЗТ и ПТ, с контролем распространения (п. 5 ПП №369-ПП)
+  source: основной
+- name: Дуб черешчатый (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Ива белая (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Ива ломкая ф. «Bullata»
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Ива прутовидная
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Ивы свердловской селекции (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Ива Шверина
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Кладрастис желтый
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Клен гиннала/приречный
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Клен красный (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Клен остролистный (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Клен сахаристый/серебристый (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: false
+    industrial: true
+  notes: []
+  source: основной
+- name: Клен татарский
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Конский каштан восьмитычинковый
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Конский каштан мясо-красный
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Липа американская
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - 'Требует особого ухода: защита корневой системы от травм, весеннее дождевание кроны (при посадке у
+    дорог), мульчирование, рыхление'
+  source: основной
+- name: Липа крупнолистная (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - 'Требует особого ухода: защита корневой системы от травм, весеннее дождевание кроны (при посадке у
+    дорог), мульчирование, рыхление'
+  source: основной
+- name: Липа мелколистная/сердцевидная (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - 'Требует особого ухода: защита корневой системы от травм, весеннее дождевание кроны (при посадке у
+    дорог), мульчирование, рыхление'
+  source: основной
+- name: Липа обыкновенная/европейская (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - 'Требует особого ухода: защита корневой системы от травм, весеннее дождевание кроны (при посадке у
+    дорог), мульчирование, рыхление'
+  source: основной
+- name: Ольха серая(формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: false
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Ольха черная(формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: false
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Орех маньчжурский
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: false
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: false
+    park: false
+    industrial: true
+  notes:
+  - Разрешён на всех территориях, кроме ООЗТ и ПТ, с контролем распространения (п. 5 ПП №369-ПП)
+  source: основной
+- name: Орех серый
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: false
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Робиния лжеакация/акация белая
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: false
+    industrial: false
+  notes:
+  - Разрешён на всех территориях, кроме ООЗТ и ПТ, с контролем распространения (п. 5 ПП №369-ПП)
+  source: основной
+- name: Рябина ария (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Рябина гибридная (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Рябина обыкновенная (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Рябина промежуточная (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Рябина тюрингская/дуболистная (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Слива домашняя (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Слива колючая/терн
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Слива растопыренная
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Тополь бальзамический(муж. клоны)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Тополь белый/серебристый (муж. клоны)(формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Тополь берлинский (муж. клоны)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Тополь дрожащий/осина (муж. клоны)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: false
+    highway: true
+    square: false
+    park: false
+    industrial: true
+  notes: []
+  source: основной
+- name: Тополь канадский (муж. клоны)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Тополь Симона (муж. клоны)(формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Тополь советский Пирамидальный (муж. клоны)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Черемуха виргинская (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Разрешён на всех территориях, кроме ООЗТ и ПТ, с контролем распространения (п. 5 ПП №369-ПП)
+  source: основной
+- name: Черемуха Маака
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Черемуха обыкновенная (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Черемуха поздняя (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Яблоня Недзведцкого
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Яблоня обильноцветущая
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Яблоня сливолистная
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Яблоня ягодная (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Аморфа кустарниковая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Разрешён на всех территориях, кроме ООЗТ и ПТ, с контролем распространения (п. 5 ПП №369-ПП)
+  source: основной
+- name: Арония черноплодная/Мичурина (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Барбарис амурский
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Барбарис обыкновенный (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Барбарис оттавский (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Барбарис Тунберга (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Бересклет бородавчатый
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Бересклет европейский (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Бересклет крылатый (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Бересклет Маака
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Бирючина обыкновенная (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Боярышник кроваво-красный
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Боярышник обыкновенный/колючий
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Боярышник однопестичный (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: HYPERLINK "https://www.google.com/search?q=%D0%91%D1%83%D0%B7%D0%B8%D0%BD%D0%B0+%D0%BA%D0%B0%D0%BD%D0%B0%D0%B4%D1%81%D0%BA%D0%B0%D1%8F+%C2%AB%D0%90%D1%83%D1%80%D0%B5%D0%B0%C2%BB&oq=%D0%91%D1%83%D0%B7%D0%B8%D0%BD%D0%B0+%D0%BA%D0%B0%D0%BD%D0%B0%D0%B4%D1%81%D0%BA%D0%B0%D1%8F+%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D0%B8%D1%81%D1%82%D0%B0%D1%8F&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigAdIBBzM0MmowajSoAgCwAgE&sourceid=chrome&ie=UTF-8&mstk=AUtExfBMWM9x8bcqk3FdEMqKlDBzjpqJ90F5FKwqrckLMwP6LMSX9P9BQwXIY3YIdSPTf7dF0HmZcWlvFEok_vjoPOBYGAnOSag7GUT0bC_3ohmGR6Z4jWDG6_Jd8ff_DNBtXxacURdnr88RO9atL1CD60rtJIM8pSWxiM9zDEtcKP-dhpV-p7svJN_1AONd9zXQLxhAbsiAAIIzF92h-XZag4twhOy7tvKZabF9AUN9fjPOof6bjkbr32Ai6Ux02rvVXBI3vkswsCwBQu56jLV-LFZloPmT0Xcv__p60KgLwMsPdw&csui=3&ved=2ahUKEwjd_5_-iLiTAxWxFxAIHQlGEukQgK4QegQIARAB"
+    Бузина канадская «Аurea»
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Бузина красная/кистистая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: false
+    highway: false
+    square: false
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Бузина черная (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Гортензия Бреттшнейдера
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Гортензия древовидная (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Гортензия метельчатая (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Дерен белый/сибирский (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Разрешён на всех территориях, кроме ООЗТ и ПТ, с контролем распространения (п. 5 ПП №369-ПП)
+  source: основной
+- name: Дерен кроваво-красный (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Дерен отпрысковый ф. «Флавирамея»
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Жимолость альпийская
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Жимолость золотистая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Жимолость Королькова
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Жимолость Маака
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Жимолость Максимовича
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Жимолость обыкновенная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: false
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Жимолость татарская (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Ива пурпурная ф. «Nana»
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Ирга канадская/Ирга Ламарка
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Ирга колосистая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Разрешён на всех территориях, кроме ООЗТ и ПТ, с контролем распространения (п. 5 ПП №369-ПП)
+  source: основной
+- name: Ирга круглолистная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Вид с потенциалом самосева и неконтролируемого распространения. За пределами ООЗТ посадка допускается
+    на расстоянии от 1 до 2 км от их границ при условии регулярного контроля
+  source: основной
+- name: Калина гордовина (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Калина обыкновенная (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Калина Саржента (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Карагана древовидная/акация желтая (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: false
+    industrial: true
+  notes: []
+  source: основной
+- name: Карагана кустарниковая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Кизильник блестящий
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Лапчатка кустарниковая (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Лещина обыкновенная (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: false
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Лещина пурпурнолистная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: false
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Лох серебристый
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Лох узколистный
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Магония падуболистная (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Пузыреплодник калинолистный (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Разрешён на всех территориях, кроме ООЗТ и ПТ, с контролем распространения (п. 5 ПП №369-ПП)
+  source: основной
+- name: Роза бедренцеволистная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Роза морщинистая (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: false
+    industrial: true
+  notes:
+  - Разрешён на всех территориях, кроме ООЗТ и ПТ, с контролем распространения (п. 5 ПП №369-ПП)
+  source: основной
+- name: Роза сизая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Роза собачья
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Рябинник рябинолистный (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Разрешён на всех территориях, кроме ООЗТ и ПТ, с контролем распространения (п. 5 ПП №369-ПП)
+  source: основной
+- name: Сирень амурская
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: false
+    highway: true
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Сирень венгерская
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Сирень обыкновенная (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Сирень Престон(сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Смородина альпийская (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Смородина железистая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Смородина золотистая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Смородина красная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Снежноягодник белый (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: false
+    industrial: true
+  notes:
+  - Вид с потенциалом самосева и неконтролируемого распространения. За пределами ООЗТ посадка допускается
+    на расстоянии от 1 до 2 км от их границ при условии регулярного контроля
+  source: основной
+- name: Спирея березолистная (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Спирея Билларда (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Спирея Бумальда (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Спирея Вангутта (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Спирея дубравколистная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Спирея Дугласа (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Спирея иволистная (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Спирея ниппонская (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Спирея острозубчатая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Спирея серая (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Спирея средняя (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Спирея трехлопастная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Спирея японская (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Форзиция обратнояйцевидная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Хеномелес японский
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Чубушник венечный (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Чубушник Лемуана (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Чубушник мелколистный
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Актинидия коломикта
+  kind: liana
+  group: лиана
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Виноград амурский
+  kind: liana
+  group: лиана
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Девичий виноград пятилисточковый
+  kind: liana
+  group: лиана
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Разрешён на всех территориях, кроме ООЗТ и ПТ, с контролем распространения (п. 5 ПП №369-ПП)
+  source: основной
+- name: Жимолость каприфоль
+  kind: liana
+  group: лиана
+  allowed:
+    yard: true
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Клематис сибирский
+  kind: liana
+  group: лиана
+  allowed:
+    yard: true
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Лимонник китайский
+  kind: liana
+  group: лиана
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Ель канадская/сизая (формы и сорта)
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Ель сербская (формы и сорта)
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Требует дренированных, рыхлых, незасоленных, неуплотнённых почв. Не высаживать в зонах с застойным
+    увлажнением и на уплотнённых грунтах
+  source: основной
+- name: Ель шероховатая
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Требует дренированных, рыхлых, незасоленных, неуплотнённых почв. Не высаживать в зонах с застойным
+    увлажнением и на уплотнённых грунтах
+  source: основной
+- name: Ель Энгельмана
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Кипарисовик горохоплодный
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Лиственница Кемфера
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Лиственница Сукачева
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Пихта бальзамическая (формы и сорта)
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - 'Требует особого ухода: защита корневой системы от травм, весеннее дождевание кроны (при посадке у
+    дорог), мульчирование, рыхление'
+  - Требует дренированных, рыхлых, незасоленных, неуплотнённых почв. Не высаживать в зонах с застойным
+    увлажнением и на уплотнённых грунтах
+  - Чувствительно к противогололёдным реагентам и выхлопным газам
+  source: основной
+- name: Пихта Вича
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Пихта одноцветная(формы и сорта)
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Пихта сибирская
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - 'Требует особого ухода: защита корневой системы от травм, весеннее дождевание кроны (при посадке у
+    дорог), мульчирование, рыхление'
+  - Требует дренированных, рыхлых, незасоленных, неуплотнённых почв. Не высаживать в зонах с застойным
+    увлажнением и на уплотнённых грунтах
+  - Чувствительно к противогололёдным реагентам и выхлопным газам
+  source: основной
+- name: Псевдотсуга Мензиса сизая
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Сосна Веймутова (формы и сорта)
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: false
+    park: true
+    industrial: false
+  notes:
+  - Требует дренированных, рыхлых, незасоленных, неуплотнённых почв. Не высаживать в зонах с застойным
+    увлажнением и на уплотнённых грунтах
+  source: основной
+- name: Сосна кедровая европейская
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Сосна кедровая корейская
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Сосна кедровая сибирская
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Сосна кедровая стланиковая (кедровый стланик)
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Сосна румелийская (формы и сорта)
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: false
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Сосна черная австрийская
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Туя западная (формы и сорта)
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Микробиота перекрёстнопарная
+  kind: shrub
+  group: хвойный
+  allowed:
+    yard: false
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Можжевельник китайский (формы и сорта)
+  kind: shrub
+  group: хвойный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Чувствительно к противогололёдным реагентам и выхлопным газам
+  - Не высаживать вблизи плодовых культур (яблоня, груша, айва) из-за риска распространения ржавчинных
+    грибов
+  source: основной
+- name: Можжевельник чешуйчатый (формы и сорта)
+  kind: shrub
+  group: хвойный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Чувствительно к противогололёдным реагентам и выхлопным газам
+  - Не высаживать вблизи плодовых культур (яблоня, груша, айва) из-за риска распространения ржавчинных
+    грибов
+  source: основной
+- name: Багряник японский
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Береза бумажная
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Берёза вишнёвая
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Береза ребристая (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Береза черная (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: false
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Береза Эрмана/каменная (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: false
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Боярышник зеленомясый
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Вяз шершавый (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Груша иволистная (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Груша обыкновенная
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Дуб монгольский
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Ива козья (формы и сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: false
+    highway: false
+    square: false
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Ива пятитычинковая
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Ива росистая
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Ива цельнолистная
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Клен зеленокорый
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Клён колосистый
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Клен ложнозибольдов
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Клен маньчжурский
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Клён мелколистный
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Липа войлочная/серебристая
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - 'Требует особого ухода: защита корневой системы от травм, весеннее дождевание кроны (при посадке у
+    дорог), мульчирование, рыхление'
+  source: основной
+- name: Липа монгольская
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - 'Требует особого ухода: защита корневой системы от травм, весеннее дождевание кроны (при посадке у
+    дорог), мульчирование, рыхление'
+  source: основной
+- name: Маакия амурская
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Рябина Арнольда (сорта)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Рябина бузинолистная
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Рябина кашмирская
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Рябина Мужо
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Тополь лавролистный
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: false
+    highway: true
+    square: false
+    park: false
+    industrial: true
+  notes: []
+  source: основной
+- name: Тополь Максимовича (муж. клоны)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: false
+    highway: true
+    square: false
+    park: false
+    industrial: true
+  notes: []
+  source: основной
+- name: Тополь черный (муж. клоны)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: false
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Черемуха пенсильванская
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Яблоня Зибольда
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Яблоня Саржента
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Ясень маньчжурский
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Барбарис Вильсон
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Бересклет Форчуна (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Боярышник Максимовича
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Вейгела Миддендорфа
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: false
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Вишня войлочная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Дёрен Бейли
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Дёрен Вальтера
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Жёстер даурский
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Жимолость покрывальная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Кизильник горизонтальный
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Миндаль низкий/степной
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Ракитник русский
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: основной
+- name: Рододендрон даурский
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: false
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Сирень Вольфа
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Сирень Комарова
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Скумпия обыкновенная/кожевенная (формы и сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Снежноягодник Доренбоза
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Стефанандра надрезаннолистная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Стефанандра Танаки
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Экзохорда тяньшанская
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: основной
+- name: Аристолохия крупнолистная
+  kind: liana
+  group: лиана
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Аристолохия маньчжурская
+  kind: liana
+  group: лиана
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Гортензия черешковая
+  kind: liana
+  group: лиана
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Древогубец круглолистный
+  kind: liana
+  group: лиана
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Вид с потенциалом самосева и неконтролируемого распространения. За пределами ООЗТ посадка допускается
+    на расстоянии от 1 до 2 км от их границ при условии регулярного контроля
+  source: основной
+- name: Клематис тангутский
+  kind: liana
+  group: лиана
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: основной
+- name: Пихта белокорая/почкочешуйная
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Пихта цельнолистная
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: перспективный
+- name: Сосна Мюррея
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Тсуга канадская
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - 'Требует особого ухода: защита корневой системы от травм, весеннее дождевание кроны (при посадке у
+    дорог), мульчирование, рыхление'
+  - Требует дренированных, рыхлых, незасоленных, неуплотнённых почв. Не высаживать в зонах с застойным
+    увлажнением и на уплотнённых грунтах
+  - Чувствительно к противогололёдным реагентам и выхлопным газам
+  source: перспективный
+- name: Плосковеточник восточный
+  kind: tree
+  group: хвойное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Тисс остроконечный (сорта)
+  kind: shrub
+  group: хвойный
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Тисс средний (сорта)
+  kind: shrub
+  group: хвойный
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Тисс ягодный (малорослые сорта)
+  kind: shrub
+  group: хвойный
+  allowed:
+    yard: false
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Абрикос маньчжурский (мелкоплодная форма)
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Берёза аллеганская
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: false
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Берёза даурская
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: false
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Берёза плосколистная
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: false
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Боярышник согнутостолбиковый
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Вяз Андросова
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Вяз японский/Давида
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Ива волчниковая
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Ива каспийская
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Ива тонкостолбиковая
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Клён бородатый
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Конский каштан голый
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: перспективный
+- name: Лещина древовидная
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: false
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Магнолия кобус
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: перспективный
+- name: Рябина Альбова
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Рябина Вильморена
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Рябина кавказская
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Рябина Кёне
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Рябина смешанная
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Черёмуха Грея
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Черёмуха Сьори
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Слива Саржента
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Чозения арбутолистная
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Яблоня Сиверса
+  kind: tree
+  group: лиственное
+  allowed:
+    yard: true
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Акантопанакс сидячецветковый
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Аралия высокая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Арония арбутолистная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Барбарис выемчатый
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Барбарис Дильса
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Бересклет большекрылый
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Бересклет Гамильтона
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Бересклет малоцветковый
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Вейгела ранняя
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: перспективный
+- name: Восковница пенсильваннская
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Восковница обыкновенная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Гамамелис виргинский
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Дейция амурская
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: перспективный
+- name: Диервилла ручейная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Жимолость мелколистная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Жимолость Толмачёва
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Калина сливолистная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Лещина Зибольда
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: false
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Ольха зеленая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Птелея трёхлистная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Рододендрон жёлтый
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: false
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Рододендрон короткоплодный (сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: false
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Рододендрон канадский гибридные (сорта)
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: false
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Рододендрон кэтевбинский
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: false
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Рододендрон мягкий
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: false
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Рододендрон ноготковидный
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: false
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Рододендрон Смирнова
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: false
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Рододендрон Фори
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: false
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Рододендрон японский
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: false
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Роза даурская
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Роза калифорнийская
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Роза Федченко
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes:
+  - Не высаживать вблизи детских и спортивных площадок, мест массового пребывания детей
+  source: перспективный
+- name: Сирень пекинская
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Сирень бархатистая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Сирень мохнатая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Сирень пониклая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: перспективный
+- name: Сирень юньнаньская
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: перспективный
+- name: Спирея длиннопочечная
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Спирея извилистая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Форзиция свисающая
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Чубушник Гордона
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Чубушник пушистый
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Чубушник тонколистный
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Чубушник Шренка
+  kind: shrub
+  group: лиственный
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Актинидия многобрачная/полигамная
+  kind: liana
+  group: лиана
+  allowed:
+    yard: false
+    preschool: false
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: false
+  notes: []
+  source: перспективный
+- name: Виноград лисий
+  kind: liana
+  group: лиана
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Виноград приречный
+  kind: liana
+  group: лиана
+  allowed:
+    yard: true
+    preschool: true
+    school: true
+    health: true
+    highway: true
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный
+- name: Виноградовник аконитолистный
+  kind: liana
+  group: лиана
+  allowed:
+    yard: true
+    preschool: false
+    school: false
+    health: true
+    highway: false
+    square: true
+    park: true
+    industrial: true
+  notes: []
+  source: перспективный

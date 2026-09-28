@@ -1,0 +1,340 @@
+# Каталог пород. Ассортимент взят из дендропланов реальных проектов
+# (ул. Берзарина, Песчаный переулок) — то, что проходит согласование в Москве.
+#
+# crown_m  — диаметр кроны взрослого растения, задаёт интервал посадки
+# genus / family — нужны для правила 10-20-30: не более 10% одного вида,
+#   20% рода и 30% семейства. Правило защищает от массовой гибели насаждений
+#   при вспышке вредителя или болезни; именно из-за его несоблюдения
+#   на улицах Москвы стареют однотипные посадки тополя и ясеня.
+# shade_tolerance / salt_tolerance — low | medium | high
+
+trees:
+  - id: tilia_cordata
+    name: "Липа мелколистная"
+    latin: "Tilia cordata"
+    genus: Tilia
+    family: Malvaceae
+    crown_m: 8.0
+    height_m: 15.0
+    shade_tolerance: medium
+    salt_tolerance: medium
+    note: "Обхват ствола 16-18 см, ком 0,9х0,6 м"
+  - id: acer_platanoides
+    name: "Клён остролистный"
+    latin: "Acer platanoides"
+    genus: Acer
+    family: Sapindaceae
+    crown_m: 8.0
+    height_m: 15.0
+    shade_tolerance: medium
+    salt_tolerance: medium
+  - id: acer_globosum
+    name: "Клён остролистный 'Globosum' (штамб)"
+    latin: "Acer platanoides 'Globosum'"
+    genus: Acer
+    family: Sapindaceae
+    crown_m: 4.0
+    height_m: 5.0
+    shade_tolerance: medium
+    salt_tolerance: high
+    note: "Шаровидная крона, для узких участков вдоль проезжей части"
+  - id: acer_ginnala
+    name: "Клён Гиннала"
+    latin: "Acer ginnala"
+    genus: Acer
+    family: Sapindaceae
+    crown_m: 4.0
+    height_m: 5.0
+    shade_tolerance: medium
+    salt_tolerance: high
+  - id: quercus_robur
+    name: "Дуб черешчатый"
+    latin: "Quercus robur"
+    genus: Quercus
+    family: Fagaceae
+    crown_m: 10.0
+    height_m: 20.0
+    shade_tolerance: medium
+    salt_tolerance: medium
+  - id: sorbus_aucuparia
+    name: "Рябина обыкновенная"
+    latin: "Sorbus aucuparia"
+    genus: Sorbus
+    family: Rosaceae
+    crown_m: 5.0
+    height_m: 9.0
+    shade_tolerance: medium
+    salt_tolerance: medium
+  - id: malus_niedzwetzkyana
+    name: "Яблоня декоративная Недзвецкого"
+    latin: "Malus niedzwetzkyana"
+    genus: Malus
+    family: Rosaceae
+    crown_m: 5.0
+    height_m: 7.0
+    shade_tolerance: low
+    salt_tolerance: medium
+  - id: prunus_maackii
+    name: "Черёмуха Маака"
+    latin: "Prunus maackii"
+    genus: Prunus
+    family: Rosaceae
+    crown_m: 6.0
+    height_m: 10.0
+    shade_tolerance: medium
+    salt_tolerance: medium
+  - id: crataegus_monogyna
+    name: "Боярышник однопестичный"
+    latin: "Crataegus monogyna"
+    genus: Crataegus
+    family: Rosaceae
+    crown_m: 4.0
+    height_m: 6.0
+    shade_tolerance: medium
+    salt_tolerance: high
+  - id: betula_pendula
+    name: "Берёза повислая"
+    latin: "Betula pendula"
+    genus: Betula
+    family: Betulaceae
+    crown_m: 6.0
+    height_m: 18.0
+    shade_tolerance: low
+    salt_tolerance: low
+  - id: pinus_sylvestris
+    name: "Сосна обыкновенная"
+    latin: "Pinus sylvestris"
+    genus: Pinus
+    family: Pinaceae
+    crown_m: 6.0
+    height_m: 20.0
+    shade_tolerance: low
+    salt_tolerance: low
+    note: "Точечно, вне зоны применения реагентов"
+  - id: larix_sibirica
+    name: "Лиственница сибирская"
+    latin: "Larix sibirica"
+    genus: Larix
+    family: Pinaceae
+    crown_m: 6.0
+    height_m: 20.0
+    shade_tolerance: low
+    salt_tolerance: medium
+  - id: aesculus_hippocastanum
+    name: "Каштан конский"
+    latin: "Aesculus hippocastanum"
+    genus: Aesculus
+    family: Sapindaceae
+    crown_m: 9.0
+    height_m: 15.0
+    shade_tolerance: medium
+    salt_tolerance: low
+  - id: corylus_colurna
+    name: "Лещина древовидная"
+    latin: "Corylus colurna"
+    genus: Corylus
+    family: Betulaceae
+    crown_m: 6.0
+    height_m: 12.0
+    shade_tolerance: medium
+    salt_tolerance: medium
+  - id: picea_pungens
+    name: "Ель колючая"
+    latin: "Picea pungens"
+    genus: Picea
+    family: Pinaceae
+    crown_m: 5.0
+    height_m: 15.0
+    shade_tolerance: medium
+    salt_tolerance: low
+
+shrubs:
+  - id: spiraea_grefsheim
+    name: "Спирея серая 'Grefsheim'"
+    latin: "Spiraea x cinerea 'Grefsheim'"
+    genus: Spiraea
+    family: Rosaceae
+    crown_m: 0.8
+    hedge_interval_m: 0.6
+    shade_tolerance: medium
+    salt_tolerance: medium
+  - id: spiraea_vanhouttei
+    name: "Спирея Вангутта"
+    latin: "Spiraea x vanhouttei"
+    genus: Spiraea
+    family: Rosaceae
+    crown_m: 1.2
+    hedge_interval_m: 0.8
+    shade_tolerance: medium
+    salt_tolerance: medium
+  - id: cotoneaster_lucidus
+    name: "Кизильник блестящий"
+    latin: "Cotoneaster lucidus"
+    genus: Cotoneaster
+    family: Rosaceae
+    crown_m: 0.6
+    hedge_interval_m: 0.4
+    shade_tolerance: high
+    salt_tolerance: high
+  - id: physocarpus_luteus
+    name: "Пузыреплодник калинолистный 'Luteus'"
+    latin: "Physocarpus opulifolius 'Luteus'"
+    genus: Physocarpus
+    family: Rosaceae
+    crown_m: 0.8
+    hedge_interval_m: 0.5
+    shade_tolerance: medium
+    salt_tolerance: medium
+  - id: physocarpus_diabolo
+    name: "Пузыреплодник 'Diabolo'"
+    latin: "Physocarpus opulifolius 'Diabolo'"
+    genus: Physocarpus
+    family: Rosaceae
+    crown_m: 0.8
+    hedge_interval_m: 0.5
+    shade_tolerance: medium
+    salt_tolerance: medium
+  - id: rosa_rugosa
+    name: "Роза морщинистая"
+    latin: "Rosa rugosa"
+    genus: Rosa
+    family: Rosaceae
+    crown_m: 0.6
+    hedge_interval_m: 0.7
+    shade_tolerance: low
+    salt_tolerance: high
+  - id: symphoricarpos_doorenbosii
+    name: "Снежноягодник Доренбоза"
+    latin: "Symphoricarpos x doorenbosii"
+    genus: Symphoricarpos
+    family: Caprifoliaceae
+    crown_m: 0.6
+    hedge_interval_m: 0.5
+    shade_tolerance: high
+    salt_tolerance: medium
+  - id: cornus_elegantissima
+    name: "Дерен белый 'Elegantissima'"
+    latin: "Cornus alba 'Elegantissima'"
+    genus: Cornus
+    family: Cornaceae
+    crown_m: 1.5
+    hedge_interval_m: 0.8
+    shade_tolerance: high
+    salt_tolerance: medium
+  - id: syringa_vulgaris
+    name: "Сирень обыкновенная"
+    latin: "Syringa vulgaris"
+    genus: Syringa
+    family: Oleaceae
+    crown_m: 2.0
+    hedge_interval_m: 1.2
+    shade_tolerance: medium
+    salt_tolerance: medium
+  - id: euonymus_europaeus
+    name: "Бересклет европейский"
+    latin: "Euonymus europaeus"
+    genus: Euonymus
+    family: Celastraceae
+    crown_m: 1.5
+    hedge_interval_m: 0.8
+    shade_tolerance: high
+    salt_tolerance: medium
+  - id: juniperus_sabina
+    name: "Можжевельник казацкий 'Tamariscifolia'"
+    latin: "Juniperus sabina 'Tamariscifolia'"
+    genus: Juniperus
+    family: Cupressaceae
+    crown_m: 0.5
+    hedge_interval_m: 0.8
+    shade_tolerance: medium
+    salt_tolerance: low
+  - id: syringa_josikaea
+    name: "Сирень венгерская"
+    latin: "Syringa josikaea"
+    genus: Syringa
+    family: Oleaceae
+    crown_m: 2.0
+    hedge_interval_m: 1.2
+    shade_tolerance: medium
+    salt_tolerance: medium
+  - id: forsythia_ovata
+    name: "Форзиция яйцевидная"
+    latin: "Forsythia ovata"
+    genus: Forsythia
+    family: Oleaceae
+    crown_m: 1.5
+    hedge_interval_m: 0.8
+    shade_tolerance: low
+    salt_tolerance: medium
+  - id: ligustrum_vulgare
+    name: "Бирючина обыкновенная"
+    latin: "Ligustrum vulgare"
+    genus: Ligustrum
+    family: Oleaceae
+    crown_m: 1.2
+    hedge_interval_m: 0.5
+    shade_tolerance: high
+    salt_tolerance: medium
+  - id: viburnum_opulus
+    name: "Калина обыкновенная"
+    latin: "Viburnum opulus"
+    genus: Viburnum
+    family: Adoxaceae
+    crown_m: 2.0
+    hedge_interval_m: 1.0
+    shade_tolerance: high
+    salt_tolerance: medium
+  - id: sambucus_racemosa
+    name: "Бузина красная"
+    latin: "Sambucus racemosa"
+    genus: Sambucus
+    family: Adoxaceae
+    crown_m: 2.0
+    hedge_interval_m: 1.2
+    shade_tolerance: high
+    salt_tolerance: medium
+  - id: hydrangea_paniculata
+    name: "Гортензия метельчатая"
+    latin: "Hydrangea paniculata"
+    genus: Hydrangea
+    family: Hydrangeaceae
+    crown_m: 1.5
+    hedge_interval_m: 0.9
+    shade_tolerance: medium
+    salt_tolerance: low
+  - id: philadelphus_coronarius
+    name: "Чубушник венечный"
+    latin: "Philadelphus coronarius"
+    genus: Philadelphus
+    family: Hydrangeaceae
+    crown_m: 2.0
+    hedge_interval_m: 1.0
+    shade_tolerance: medium
+    salt_tolerance: medium
+  - id: berberis_thunbergii
+    name: "Барбарис Тунберга"
+    latin: "Berberis thunbergii"
+    genus: Berberis
+    family: Berberidaceae
+    crown_m: 0.8
+    hedge_interval_m: 0.5
+    shade_tolerance: low
+    salt_tolerance: high
+  - id: weigela_florida
+    name: "Вейгела цветущая"
+    latin: "Weigela florida"
+    genus: Weigela
+    family: Caprifoliaceae
+    crown_m: 1.5
+    hedge_interval_m: 0.9
+    shade_tolerance: medium
+    salt_tolerance: low
+  - id: thuja_occidentalis
+    name: "Туя западная 'Smaragd'"
+    latin: "Thuja occidentalis 'Smaragd'"
+    genus: Thuja
+    family: Cupressaceae
+    crown_m: 1.0
+    hedge_interval_m: 0.7
+    shade_tolerance: medium
+    salt_tolerance: low
