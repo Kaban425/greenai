@@ -101,6 +101,34 @@ def _no_bullet(p):
     pPr.set("indent", "0")
 
 
+def fill(sh, rows):
+    """Обязательные слайды: текст подставляется в абзацы и фрагменты шаблона,
+    их оформление (жирность, курсив, кегль, маркеры) не трогается.
+
+    rows — по строке на абзац шаблона: список текстов фрагментов или None
+    (абзац удаляется). Лишние тексты дописываются обычным, не жирным
+    фрагментом — это значение после жирной подписи «Капитан: ».
+    """
+    paras = list(sh.text_frame.paragraphs)
+    for p, row in zip(paras, rows):
+        if row is None:
+            p._p.getparent().remove(p._p)
+            continue
+        runs = list(p.runs)
+        for r, txt in zip(runs, row):
+            r.text = txt
+        for txt in row[len(runs):]:
+            r = p.add_run()
+            if runs:
+                rPr = runs[-1]._r.find(
+                    "{http://schemas.openxmlformats.org/drawingml/2006/main}rPr")
+                if rPr is not None:
+                    r._r.insert(0, copy.deepcopy(rPr))
+            r.text = txt
+            r.font.bold = False
+            r.font.italic = False
+
+
 def title(slide, text, sid, pill=None):
     """Заголовок; розовая плашка под ним подгоняется по длине."""
     put(shape(slide, sid), [text.upper()], color=WHITE if pill is not None else PURPLE)
@@ -214,12 +242,14 @@ def main(src, out):
     s = S[1]
     put(shape(s, 18), [f"Команда «{team['name']}»" if team else "GreenAI"], color=PURPLE, bold=True, size=24)
     if team:
-        N = lambda t: (t, {"bold": False})             # noqa: E731
-        put(shape(s, 14), [[B("Капитан: "), N(team["captain"])],
-                           [B("Кол-во участников: "), N(team["count"])],
-                           [B("Кто что делал: "), N(team["about"])],
-                           [B("Решение: "), N("GreenAI")],
-                           [B("Город и регион: "), N(team["city"])]], bullet=True)
+        # слайды 7–11 шаблона обязательные: абзацы и оформление — как в шаблоне,
+        # меняется только текст; пустой ответ убирает строку-подсказку
+        fill(shape(s, 14), [["Капитан: ", team["captain"]],
+                            ["Кол-во участников: ", team["count"]],
+                            ["Краткое описание: "],
+                            [team.get("formed") or team["about"]],
+                            [team["work"]] if team.get("work") else None,
+                            ["Город и регион: ", team["city"]]])
         picture_in(s, 2, os.path.join(tdir, "team.jpg"))
     put(shape(s, 5), ["Принимаем чертёж улицы (DXF/DWG), сами находим подземные сети и строим план "
                       "посадок, который не нарушает нормативных отступов. Результат — DXF на отдельных "
@@ -227,38 +257,26 @@ def main(src, out):
     put(shape(s, 8), ["Три независимые проверки норм, включая точную по исходной геометрии; модель "
                       "выбора места обучена на посадочных планах 8 улиц пилота."])
 
-    # 3. Участники: карточек в шаблоне пять, лишние убираются, остальные — по центру
+    # 3. Участники: по правилам организаторов лишние карточки только удаляются,
+    # оставшиеся стоят на своих местах в прежнем размере
     s = S[2]
-    title(s, "Участники команды", 7, pill=13)
+    put(shape(s, 7), ["УЧАСТНИКИ КОМАНДЫ"], color=WHITE)
     if team:
         cards = [(17, 2, 15, 9), (56, 3, 58, 57), (59, 4, 61, 60), (62, 5, 64, 63), (65, 6, 67, 66)]
         n = len(team["members"])
         for ids in cards[n:]:
             for sid in ids:
                 drop(s, sid)
-        # участников меньше пяти — карточки шире, чтобы почта не переносилась
-        card_w = Inches(3.4) if n <= 3 else shape(s, 17).width
-        gap = Inches(0.3)
-        start = (prs.slide_width - n * card_w - (n - 1) * gap) // 2
-        top = shape(s, 17).top
-        for k, (ids, m) in enumerate(zip(cards, team["members"])):
-            rect, pic, name, det = ids
-            x = start + k * (card_w + gap)
-            shape(s, rect).left, shape(s, rect).width = x, card_w
-            pw, ph_ = Inches(2.7), Inches(2.45)
-            for sid, (xx, yy, ww, hh) in (
-                    (name, (x + Inches(0.3), top + Inches(2.85), card_w - Inches(0.6), Inches(0.6))),
-                    (det, (x + Inches(0.3), top + Inches(3.5), card_w - Inches(0.6), Inches(1.6)))):
-                sh = shape(s, sid)
-                sh.left, sh.top, sh.width, sh.height = xx, yy, ww, hh
-            put(shape(s, name), [m["name"]], color=PURPLE, bold=True)
-            put(shape(s, det), m["lines"], bullet=True)
-            picture_in(s, pic, os.path.join(tdir, m["photo"]),
-                       box=(x + (card_w - pw) // 2, top + Inches(0.3), pw, ph_))
+        for (rect, pic, name, det), m in zip(cards, team["members"]):
+            fill(shape(s, name), [[m["name"]]])
+            # строки шаблона: роль, ник в мессенджере, телефон, место работы/учёбы
+            fill(shape(s, det), [[m[k]] if m.get(k) else None
+                                 for k in ("role", "nick", "phone", "work")])
+            picture_in(s, pic, os.path.join(tdir, m["photo"]))
 
     # 4. История команды ---------------------------------------------------------------
     s = S[3]
-    title(s, "История команды", 7, pill=2)
+    put(shape(s, 7), ["ИСТОРИЯ КОМАНДЫ"], color=WHITE)
     if team:
         put(shape(s, 37), [team["history"]])
         put(shape(s, 43), [team["why"]])
@@ -268,8 +286,7 @@ def main(src, out):
                        "сравнили их планы с таблицей 9.1 и вынесли это в отдельный сценарий."])
 
     # 5. Коротко о решении -----------------------------------------------------------
-    s = S[4]
-    title(s, "Коротко о решении", 14, pill=10)
+    s = S[4]                                # заголовок уже есть в шаблоне
     put(shape(s, 3), [
         "Разбор DXF и DWG, автоподгрузка внешних ссылок",
         "Классы слоёв: правила, модель имён (97,5 %), локальная LLM",
